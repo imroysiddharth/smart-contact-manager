@@ -88,8 +88,7 @@ public class PageController {
                 // .about(userForm.getAbout())
                 // .phoneNumber(userForm.getPhoneNumber())
                 // .profilePic(
-                // "https://www./_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurgesh_sir.35c6cb78.webp&w=1920&q=75")
-                // .build();
+                //;
                 User newUser = new User();
                 newUser.setName(userForm.getName());
                 newUser.setEmail(userForm.getEmail());
@@ -97,7 +96,7 @@ public class PageController {
                 newUser.setAbout(userForm.getAbout());
                 newUser.setPhoneNumber(userForm.getPhoneNumber());
                 newUser.setProfilePic(
-                                "https://www.learncodewithdurgesh.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurgesh_sir.35c6cb78.webp&w=1920&q=75");
+                                "url.com");
 
                 User savedUser = userService.saveUser(newUser);
                 System.out.println(savedUser.getName());
